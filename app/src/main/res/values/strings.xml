@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">PMDM2324</string>
+
+    <string-array name="tipoHelado">
+        <item>Cucurucho</item>
+        <item>ChocoCucurucho</item>
+        <item>Tarrina</item>
+    </string-array>
+
+
 </resources>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ut02.u2aPidraPapelTijera">
+
+    <TextView
+        android:id="@+id/u2aPPTtvPersona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="56dp"
+        android:text="Tú"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/u2aPPTtvMaquina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="36dp"
+        android:text="Máquina"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/u2aPPTtvPuntPersona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/u2aPPTtvPersona"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/u2aPPTtvPersona"
+        app:layout_constraintTop_toBottomOf="@+id/u2aPPTtvPersona" />
+
+    <TextView
+        android:id="@+id/u2aPPTtvPuntMaquina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/u2aPPTtvMaquina"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/u2aPPTtvMaquina"
+        app:layout_constraintTop_toBottomOf="@+id/u2aPPTtvMaquina" />
+
+    <ImageView
+        android:id="@+id/u2aPPTivPapel"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u2aPPTtvPuntPersona"
+        app:srcCompat="@drawable/papel" />
+
+    <ImageView
+        android:id="@+id/u2aPPTivPiedra"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u2aPPTtvPuntMaquina"
+        app:srcCompat="@drawable/piedra" />
+
+    <ImageView
+        android:id="@+id/u2aPPTivTijera"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u2aPPTivPapel"
+        app:srcCompat="@drawable/tijera" />
+
+    <TextView
+        android:id="@+id/u2aPPTtvMEleccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Maquina elige:"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/u2aPPTtvResultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u2aPPTivTijera"
+        app:layout_constraintVertical_bias="0.109" />
+
+    <TextView
+        android:id="@+id/u2aPPTtvResultado"
+        android:layout_width="215dp"
+        android:layout_height="45dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u2aPPTimgMaquina"
+        app:layout_constraintVertical_bias="0.194" />
+
+    <Button
+        android:id="@+id/u2aPPTbtReiniciar"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#3F51B5"
+        android:text="REINICIAR"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u2aPPTtvResultado" />
+
+    <ImageView
+        android:id="@+id/u2aPPTimgMaquina"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.244"
+        app:layout_constraintStart_toEndOf="@+id/u2aPPTtvMEleccion"
+        app:layout_constraintTop_toBottomOf="@+id/u2aPPTivTijera"
+        app:layout_constraintVertical_bias="0.212"
+        app:srcCompat="@drawable/transparente" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

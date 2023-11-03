@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ut03.u3a5Fibonacci">
+
+    <TextView
+        android:id="@+id/u3a5tvn1"
+        android:layout_width="85dp"
+        android:layout_height="30dp"
+        android:text="Numero 1:"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.082" />
+
+    <TextView
+        android:id="@+id/u3a5tvn2"
+        android:layout_width="85dp"
+        android:layout_height="30dp"
+        android:text="Numero 2:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u3a5tvn1"
+        app:layout_constraintVertical_bias="0.205" />
+
+    <TextView
+        android:id="@+id/u3a5tvNumero1"
+        android:layout_width="105dp"
+        android:layout_height="45dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/u3a5tvn1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/u3a5tvn1"
+        app:layout_constraintTop_toTopOf="@+id/u3a5tvn1" />
+
+    <TextView
+        android:id="@+id/u3a5tvNumero2"
+        android:layout_width="105dp"
+        android:layout_height="45dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/u3a5tvn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/u3a5tvn2"
+        app:layout_constraintTop_toTopOf="@+id/u3a5tvn2" />
+
+    <Button
+        android:id="@+id/u3a5btSiguiente"
+        android:layout_width="160dp"
+        android:layout_height="75dp"
+        android:text="SIGUIENTE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.435"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u3a5tvn2"
+        app:layout_constraintVertical_bias="0.307" />
+</androidx.constraintlayout.widget.ConstraintLayout>

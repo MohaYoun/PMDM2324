@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ut02.u2aPideCita">
+
+    <TextView
+        android:id="@+id/u2aPideCitatvHoraFin"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.896"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.698" />
+
+    <EditText
+        android:id="@+id/u2aPideCitaetDNI"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.718"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u2aPideCitaetNombre"
+        app:layout_constraintVertical_bias="0.027" />
+
+    <TextView
+        android:id="@+id/u2aPideCitatvDNI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DNI:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/u2aPideCitaetDNI"
+        app:layout_constraintEnd_toStartOf="@+id/u2aPideCitaetDNI"
+        app:layout_constraintHorizontal_bias="0.706"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/u2aPideCitaetDNI"
+        app:layout_constraintVertical_bias="0.484" />
+
+    <TextView
+        android:id="@+id/u2aPideCitatvDNIet"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/u2aPideCitaetDNI"
+        app:layout_constraintEnd_toEndOf="@+id/u2aPideCitaetDNI"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="@+id/u2aPideCitaetDNI"
+        app:layout_constraintTop_toTopOf="@+id/u2aPideCitaetDNI" />
+
+    <Button
+        android:id="@+id/u2aPideCitabtValidaDNI"
+        android:layout_width="169dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="144dp"
+        android:text="VALIDAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.648"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/u2aPideCitaetNombre"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.712"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.253" />
+
+    <TextView
+        android:id="@+id/u2aPideCitatvNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/u2aPideCitaetNombre"
+        app:layout_constraintEnd_toStartOf="@+id/u2aPideCitaetNombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/u2aPideCitaetNombre" />
+
+    <TextView
+        android:id="@+id/u2aPideCitatvFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/u2aPideCitabtFecha"
+        app:layout_constraintEnd_toStartOf="@+id/u2aPideCitabtFecha"
+        app:layout_constraintHorizontal_bias="0.633"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/u2aPideCitabtFecha"
+        app:layout_constraintVertical_bias="0.363" />
+
+    <Button
+        android:id="@+id/u2aPideCitabtFecha"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/white"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.723"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u2aPideCitaetDNI"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <TextView
+        android:id="@+id/u2aPideCitatvHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hora:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/u2aPideCitabtHora"
+        app:layout_constraintEnd_toStartOf="@+id/u2aPideCitabtHora"
+        app:layout_constraintHorizontal_bias="0.682"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/u2aPideCitabtHora"
+        app:layout_constraintVertical_bias="0.606" />
+
+    <TextView
+        android:id="@+id/u2aPideCitatvFechabt"
+        android:layout_width="175dp"
+        android:layout_height="35dp"
+        android:text="Dia:"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/u2aPideCitabtFecha"
+        app:layout_constraintEnd_toEndOf="@+id/u2aPideCitabtFecha"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="@+id/u2aPideCitabtFecha"
+        app:layout_constraintTop_toTopOf="@+id/u2aPideCitabtFecha"
+        app:layout_constraintVertical_bias="0.65" />
+
+    <Button
+        android:id="@+id/u2aPideCitabtHora"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/u2aPideCitabtFecha"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/u2aPideCitabtFecha"
+        app:layout_constraintTop_toBottomOf="@+id/u2aPideCitabtFecha"
+        app:layout_constraintVertical_bias="0.054" />
+
+    <TextView
+        android:id="@+id/u2aPideCitatvNombreet"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/u2aPideCitaetNombre"
+        app:layout_constraintEnd_toEndOf="@+id/u2aPideCitaetNombre"
+        app:layout_constraintStart_toStartOf="@+id/u2aPideCitaetNombre"
+        app:layout_constraintTop_toTopOf="@+id/u2aPideCitaetNombre" />
+
+    <TextView
+        android:id="@+id/u2aPideCitatvFyH"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="Fecha y Hora:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.698" />
+
+    <TextView
+        android:id="@+id/u2aPideCitatvFechaFin"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.406"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.698" />
+
+    <ImageView
+        android:id="@+id/u2aPideCitaimgImgCheck"
+        android:layout_width="201dp"
+        android:layout_height="132dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.889"
+        app:srcCompat="@drawable/check" />
+
+    <TextView
+        android:id="@+id/u2aPideCitatvMensajeFinal"
+        android:layout_width="339dp"
+        android:layout_height="48dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/u2aPideCitaimgImgCheck"
+        app:layout_constraintStart_toStartOf="@+id/u2aPideCitaimgImgCheck"
+        app:layout_constraintTop_toBottomOf="@+id/u2aPideCitaimgImgCheck" />
+
+    <TextView
+        android:id="@+id/u2aPideCitatvError"
+        android:layout_width="360dp"
+        android:layout_height="25dp"
+        android:textAlignment="center"
+        android:textColor="#F44336"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u2aPideCitabtHora"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <TextView
+        android:id="@+id/u2aPideCitatvHorabt"
+        android:layout_width="175dp"
+        android:layout_height="35dp"
+        android:text="Hora:"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/u2aPideCitabtHora"
+        app:layout_constraintEnd_toEndOf="@+id/u2aPideCitabtHora"
+        app:layout_constraintStart_toStartOf="@+id/u2aPideCitabtHora"
+        app:layout_constraintTop_toTopOf="@+id/u2aPideCitabtHora" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
