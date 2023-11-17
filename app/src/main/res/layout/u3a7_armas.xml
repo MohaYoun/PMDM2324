@@ -4,6 +4,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ut03.u3a7Armas">
+    tools:context=".ut03.a7MetalSlug.u3a7Armas">
 
+    <Button
+        android:id="@+id/u3a7btLimpSelecArma"
+        android:layout_width="145dp"
+        android:layout_height="55dp"
+        android:text="LIMPIAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85" />
+
+    <Button
+        android:id="@+id/u3a7btCancSelecArma"
+        android:layout_width="145dp"
+        android:layout_height="55dp"
+        android:text="CANCELAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.800"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.850" />
+
+    <ImageButton
+        android:id="@+id/u3a7ivAk47"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.075"
+        app:srcCompat="@drawable/ak47" />
+
+    <ImageButton
+        android:id="@+id/u3a7ivM4"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.368"
+        app:srcCompat="@drawable/m4_a1" />
+
+    <ImageButton
+        android:id="@+id/u3a7ivUmp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.657"
+        app:srcCompat="@drawable/ump" />
 </androidx.constraintlayout.widget.ConstraintLayout>

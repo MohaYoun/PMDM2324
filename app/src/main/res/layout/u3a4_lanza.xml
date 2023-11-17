@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ut03.u3a4Lanza">
+    tools:context=".ut03.a4Retorno.u3a4Lanza">
 
     <Button
         android:id="@+id/u3a4btNombre"

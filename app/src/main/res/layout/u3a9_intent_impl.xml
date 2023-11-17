@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ut03.u3a9IntentImpl">
+
+    <Button
+        android:id="@+id/u3a9btCancion"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:text="CANCION"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.086" />
+
+    <Button
+        android:id="@+id/u3a9btLlamar"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:text="LLAMAR"
+        app:layout_constraintEnd_toEndOf="@+id/u3a9btCancion"
+        app:layout_constraintStart_toStartOf="@+id/u3a9btCancion"
+        app:layout_constraintTop_toBottomOf="@+id/u3a9btCancion" />
+
+    <Button
+        android:id="@+id/u3a9btMensaje"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:text="MENSAJE"
+        app:layout_constraintEnd_toEndOf="@+id/u3a9btLlamar"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/u3a9btLlamar"
+        app:layout_constraintTop_toBottomOf="@+id/u3a9btLlamar" />
+
+    <Button
+        android:id="@+id/u3a9btCamara"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:text="CAMARA"
+        app:layout_constraintEnd_toEndOf="@+id/u3a9btMensaje"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/u3a9btMensaje"
+        app:layout_constraintTop_toBottomOf="@+id/u3a9btMensaje" />
+
+    <TextView
+        android:id="@+id/u3a9tvError"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:textAlignment="center"
+        android:textColor="#F44336"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/u3a9btCamara"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/u3a9btCamara"
+        app:layout_constraintTop_toBottomOf="@+id/u3a9btCamara" />
+</androidx.constraintlayout.widget.ConstraintLayout>

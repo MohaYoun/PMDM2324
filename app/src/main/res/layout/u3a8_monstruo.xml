@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ut03.a8Objetos.u3a8Monstruo">
+
+
+    <EditText
+        android:id="@+id/u3a8etNumMmbrs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u3a8etNombre"
+        app:layout_constraintVertical_bias="0.100" />
+
+    <Button
+        android:id="@+id/u3a8btGenerar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GENERAR MONSTRUO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u3a8etColor"
+        app:layout_constraintVertical_bias="0.130" />
+
+    <EditText
+        android:id="@+id/u3a8etNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.091" />
+
+
+    <TextView
+        android:id="@+id/u3a8tvNom"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:text="Nombre:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/u3a8etNombre"
+        app:layout_constraintEnd_toStartOf="@+id/u3a8etNombre"
+        app:layout_constraintTop_toTopOf="@+id/u3a8etNombre" />
+
+    <TextView
+        android:id="@+id/u3a8tvMiemb"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:text="Miembros:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/u3a8etNumMmbrs"
+        app:layout_constraintEnd_toStartOf="@+id/u3a8etNumMmbrs"
+        app:layout_constraintTop_toTopOf="@+id/u3a8etNumMmbrs" />
+
+    <TextView
+        android:id="@+id/u3a8tvColor"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:text="Color:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/u3a8etColor"
+        app:layout_constraintEnd_toStartOf="@+id/u3a8etColor"
+        app:layout_constraintTop_toTopOf="@+id/u3a8etColor"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/u3a8etColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u3a8etNumMmbrs"
+        app:layout_constraintVertical_bias="0.100" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

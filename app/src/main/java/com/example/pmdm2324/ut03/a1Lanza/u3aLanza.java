@@ -1,4 +1,4 @@
-package com.example.pmdm2324.ut03;
+package com.example.pmdm2324.ut03.a1Lanza;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,7 +8,6 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.example.pmdm2324.R;
-import com.example.pmdm2324.ut03.u3aLaLanzada;
 
 public class u3aLanza extends AppCompatActivity {
     public static final String INFO_NOMBRE = "CLAVE_NOMBRE";

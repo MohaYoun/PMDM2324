@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ut03.u3a6DevContLetras">
+    tools:context=".ut03.a6ContLetras.u3a6DevContLetras">
 
     <TextView
         android:id="@+id/u3a6tvAnalisisCompl"

@@ -1,21 +1,18 @@
-package com.example.pmdm2324.ut03;
+package com.example.pmdm2324.ut03.a6ContLetras;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.pmdm2324.R;
+import com.example.pmdm2324.ut03.a6ContLetras.u3a6ContLetras;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
-import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;

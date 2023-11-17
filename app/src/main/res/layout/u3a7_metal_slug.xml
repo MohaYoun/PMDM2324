@@ -4,6 +4,161 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ut03.u3a7MetalSlug">
+    tools:context=".ut03.a7MetalSlug.u3a7MetalSlug">
+
+    <ImageView
+        android:id="@+id/u3a7ivPersonaje1"
+        android:layout_width="146dp"
+        android:layout_height="135dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.354"
+        app:srcCompat="@drawable/transparente" />
+
+    <Button
+        android:id="@+id/u3a7btSelArma1"
+        android:layout_width="140dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#2196F3"
+        android:text="ELEGIR"
+        app:layout_constraintEnd_toEndOf="@+id/u3a7ivArma1"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toStartOf="@+id/u3a7ivArma1"
+        app:layout_constraintTop_toBottomOf="@+id/u3a7ivArma1" />
+
+    <Button
+        android:id="@+id/u3a7btSelPers1"
+        android:layout_width="140dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#2196F3"
+        android:text="ELEGIR"
+        app:layout_constraintEnd_toEndOf="@+id/u3a7ivPersonaje1"
+        app:layout_constraintStart_toStartOf="@+id/u3a7ivPersonaje1"
+        app:layout_constraintTop_toBottomOf="@+id/u3a7ivPersonaje1" />
+
+    <ImageView
+        android:id="@+id/u3a7ivArma1"
+        android:layout_width="196dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/u3a7ivPersonaje1"
+        app:layout_constraintStart_toEndOf="@+id/u3a7ivPersonaje1"
+        app:layout_constraintTop_toTopOf="@+id/u3a7ivPersonaje1"
+        app:layout_constraintVertical_bias="0.966"
+        app:srcCompat="@drawable/transparente" />
+
+    <ImageView
+        android:id="@+id/u3a7ivPersonaje2"
+        android:layout_width="146dp"
+        android:layout_height="135dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.813"
+        app:srcCompat="@drawable/transparente" />
+
+    <Button
+        android:id="@+id/u3a7btSelArma2"
+        android:layout_width="140dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#F44336"
+        android:text="ELEGIR"
+        app:layout_constraintEnd_toEndOf="@+id/u3a7ivArma2"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="@+id/u3a7ivArma2"
+        app:layout_constraintTop_toBottomOf="@+id/u3a7ivArma2" />
+
+    <Button
+        android:id="@+id/u3a7btSelPers2"
+        android:layout_width="140dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#F44336"
+        android:text="ELEGIR"
+        app:layout_constraintEnd_toEndOf="@+id/u3a7ivPersonaje2"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="@+id/u3a7ivPersonaje2"
+        app:layout_constraintTop_toBottomOf="@+id/u3a7ivPersonaje2" />
+
+    <ImageView
+        android:id="@+id/u3a7ivArma2"
+        android:layout_width="196dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/u3a7ivPersonaje2"
+        app:layout_constraintStart_toEndOf="@+id/u3a7ivPersonaje2"
+        app:layout_constraintTop_toTopOf="@+id/u3a7ivPersonaje2"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/transparente" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="347dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/metalslug" />
+
+    <TextView
+        android:id="@+id/u3a7tvPers1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Personaje1"
+        android:textColor="#2196F3"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/u3a7ivPersonaje1"
+        app:layout_constraintEnd_toEndOf="@+id/u3a7ivPersonaje1"
+        app:layout_constraintStart_toStartOf="@+id/u3a7ivPersonaje1" />
+
+    <TextView
+        android:id="@+id/u3a7tvArma1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Arma"
+        android:textColor="#2196F3"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/u3a7ivArma1"
+        app:layout_constraintEnd_toEndOf="@+id/u3a7ivArma1"
+        app:layout_constraintStart_toStartOf="@+id/u3a7ivArma1" />
+
+    <TextView
+        android:id="@+id/u3a7tvPers2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Personaje2"
+        android:textColor="#F44336"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/u3a7ivPersonaje2"
+        app:layout_constraintEnd_toEndOf="@+id/u3a7ivPersonaje2"
+        app:layout_constraintStart_toStartOf="@+id/u3a7ivPersonaje2" />
+
+    <TextView
+        android:id="@+id/u3a7tvArma2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Arma"
+        android:textColor="#F44336"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/u3a7ivArma2"
+        app:layout_constraintEnd_toEndOf="@+id/u3a7ivArma2"
+        app:layout_constraintStart_toStartOf="@+id/u3a7ivArma2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.example.pmdm2324.ut03;
+package com.example.pmdm2324.ut03.a5Fibonacci;
 
 import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultCallback;
@@ -31,7 +31,7 @@ public class u3a5Fibonacci extends AppCompatActivity {
         btSiguiente = findViewById(R.id.u3a5btSiguiente);
 
         btSiguiente.setOnClickListener(view ->{
-            Intent i = new Intent(this,u3a5Dev.class);
+            Intent i = new Intent(this, u3a5Dev.class);
             String n1 = tvNum1.getText().toString();
             String n2 = tvNum2.getText().toString();
             i.putExtra(u3a5Fibonacci.CLAVE_NUMERO1, n1);

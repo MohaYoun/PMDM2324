@@ -4,6 +4,26 @@
 
     <uses-permission android:name="android.permission.VIBRATE" />
 
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.WEB_SEARCH" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.DIAL" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SENDTO" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+        </intent>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent>
+    </queries>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -15,13 +35,7 @@
         android:theme="@style/Theme.PMDM2324"
         tools:targetApi="31">
         <activity
-            android:name=".ut03.u3a7Armas"
-            android:exported="false" />
-        <activity
-            android:name=".ut03.u3a7Personajes"
-            android:exported="false" />
-        <activity
-            android:name=".ut03.u3a7MetalSlug"
+            android:name=".ut04.u4a1Holamundo"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,10 +44,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ut03.u3a6DevContLetras"
+            android:name=".ut03.a8Objetos.u3a8Dev"
             android:exported="false" />
         <activity
-            android:name=".ut03.u3a6ContLetras"
+            android:name=".ut03.a8Objetos.u3a8Monstruo"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,22 +56,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ut03.u3a5Dev"
+            android:name=".ut03.u3a9IntentImpl"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ut03.a7MetalSlug.u3a7Armas"
             android:exported="false" />
         <activity
-            android:name=".ut03.u3a5Fibonacci"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".ut03.u3a4DevResultado"
+            android:name=".ut03.a7MetalSlug.u3a7Personajes"
             android:exported="false" />
         <activity
-            android:name=".ut03.u3a4Lanza"
+            android:name=".ut03.a7MetalSlug.u3a7MetalSlug"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -66,10 +80,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ut03.u3aExpRetornoActLanzada"
+            android:name=".ut03.a6ContLetras.u3a6DevContLetras"
             android:exported="false" />
         <activity
-            android:name=".ut03.u3aExpRetornoActLanza"
+            android:name=".ut03.a6ContLetras.u3a6ContLetras"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -78,10 +92,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ut03.u3aHeladosLanza"
+            android:name=".ut03.a5Fibonacci.u3a5Dev"
             android:exported="false" />
         <activity
-            android:name=".ut03.u3aHelados"
+            android:name=".ut03.a5Fibonacci.u3a5Fibonacci"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -90,10 +104,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ut03.u3aCalculadoraLanzada"
+            android:name=".ut03.a4Retorno.u3a4DevResultado"
             android:exported="false" />
         <activity
-            android:name=".ut03.u3aCalculadoraLanza"
+            android:name=".ut03.a4Retorno.u3a4Lanza"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -102,7 +116,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ut03.u3aLaLanzada"
+            android:name=".ut03.a4Retorno.u3aExpRetornoActLanzada"
+            android:exported="false" />
+        <activity
+            android:name=".ut03.a4Retorno.u3aExpRetornoActLanza"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -111,7 +128,40 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ut03.u3aLanza"
+            android:name=".ut03.a3Heladeria.u3aHeladosLanza"
+            android:exported="false" />
+        <activity
+            android:name=".ut03.a3Heladeria.u3aHelados"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ut03.a2Calculadora.u3aCalculadoraLanzada"
+            android:exported="false" />
+        <activity
+            android:name=".ut03.a2Calculadora.u3aCalculadoraLanza"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ut03.a1Lanza.u3aLaLanzada"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ut03.a1Lanza.u3aLanza"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

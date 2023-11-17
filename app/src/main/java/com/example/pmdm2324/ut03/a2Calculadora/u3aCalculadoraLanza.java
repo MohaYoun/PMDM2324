@@ -1,4 +1,4 @@
-package com.example.pmdm2324.ut03;
+package com.example.pmdm2324.ut03.a2Calculadora;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
