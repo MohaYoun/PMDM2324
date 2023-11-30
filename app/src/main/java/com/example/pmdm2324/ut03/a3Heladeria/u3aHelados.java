@@ -28,9 +28,12 @@ public class u3aHelados extends AppCompatActivity {
         btGenerar = findViewById(R.id.u3aHeladosBtGenerar);
         eleccionSpinner = findViewById(R.id.u3aHeladosSpnTipo);
 
+        String [] tipoHelado = {"Cucurucho", "ChocoCucurucho", "Tarrina"};
         // Crear un ArrayAdapter utilizando una matriz de elementos y un diseño de spinner predeterminado
-        ArrayAdapter<CharSequence> adaptador = ArrayAdapter.createFromResource(this,
-                R.array.tipoHelado, android.R.layout.simple_spinner_item);
+        /*ArrayAdapter<CharSequence> adaptador = ArrayAdapter.createFromResource(this,
+                R.array.tipoHelado, android.R.layout.simple_spinner_item);*/
+        ArrayAdapter adaptador = new ArrayAdapter(this,
+                android.R.layout.simple_spinner_item, tipoHelado);
 
         // Especificar el diseño para usar cuando la lista de opciones aparece
         adaptador.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

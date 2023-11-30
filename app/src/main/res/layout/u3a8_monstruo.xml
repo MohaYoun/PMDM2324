@@ -8,7 +8,7 @@
 
 
     <EditText
-        android:id="@+id/u3a8etNumMmbrs"
+        android:id="@+id/u4a2etNumMmbrs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -17,11 +17,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/u3a8etNombre"
+        app:layout_constraintTop_toBottomOf="@+id/u4a2etNombre"
         app:layout_constraintVertical_bias="0.100" />
 
     <Button
-        android:id="@+id/u3a8btGenerar"
+        android:id="@+id/u4a2btGenerar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="GENERAR MONSTRUO"
@@ -29,11 +29,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/u3a8etColor"
+        app:layout_constraintTop_toBottomOf="@+id/u4a2etColor"
         app:layout_constraintVertical_bias="0.130" />
 
     <EditText
-        android:id="@+id/u3a8etNombre"
+        android:id="@+id/u4a2etNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -43,42 +43,42 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.091" />
+        app:layout_constraintVertical_bias="0.1" />
 
 
     <TextView
-        android:id="@+id/u3a8tvNom"
+        android:id="@+id/u4a2tvNom"
         android:layout_width="90dp"
         android:layout_height="40dp"
         android:text="Nombre:"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/u3a8etNombre"
-        app:layout_constraintEnd_toStartOf="@+id/u3a8etNombre"
-        app:layout_constraintTop_toTopOf="@+id/u3a8etNombre" />
+        app:layout_constraintBottom_toBottomOf="@+id/u4a2etNombre"
+        app:layout_constraintEnd_toStartOf="@+id/u4a2etNombre"
+        app:layout_constraintTop_toTopOf="@+id/u4a2etNombre" />
 
     <TextView
-        android:id="@+id/u3a8tvMiemb"
+        android:id="@+id/u4a2tvMiemb"
         android:layout_width="90dp"
         android:layout_height="40dp"
         android:text="Miembros:"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/u3a8etNumMmbrs"
-        app:layout_constraintEnd_toStartOf="@+id/u3a8etNumMmbrs"
-        app:layout_constraintTop_toTopOf="@+id/u3a8etNumMmbrs" />
+        app:layout_constraintBottom_toBottomOf="@+id/u4a2etNumMmbrs"
+        app:layout_constraintEnd_toStartOf="@+id/u4a2etNumMmbrs"
+        app:layout_constraintTop_toTopOf="@+id/u4a2etNumMmbrs" />
 
     <TextView
-        android:id="@+id/u3a8tvColor"
+        android:id="@+id/u4a2tvColor"
         android:layout_width="90dp"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:text="Color:"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/u3a8etColor"
-        app:layout_constraintEnd_toStartOf="@+id/u3a8etColor"
-        app:layout_constraintTop_toTopOf="@+id/u3a8etColor"
+        app:layout_constraintBottom_toBottomOf="@+id/u4a2etColor"
+        app:layout_constraintEnd_toStartOf="@+id/u4a2etColor"
+        app:layout_constraintTop_toTopOf="@+id/u4a2etColor"
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/u3a8etColor"
+        android:id="@+id/u4a2etColor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -87,7 +87,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/u3a8etNumMmbrs"
+        app:layout_constraintTop_toBottomOf="@+id/u4a2etNumMmbrs"
         app:layout_constraintVertical_bias="0.100" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

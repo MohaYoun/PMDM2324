@@ -1,4 +1,4 @@
-package com.example.pmdm2324.ut04;
+package com.example.pmdm2324.ut04.a2MonstruoFrag;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -11,25 +11,25 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.pmdm2324.R;
+import com.example.pmdm2324.ut03.a8Objetos.Monstruo;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link ut04f1_Holamundo#newInstance} factory method to
+ * Use the {@link u4a2Montruo_Fragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ut04f1_Holamundo extends Fragment {
+public class u4a2Montruo_Fragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-    private static final int COLOR_RANGE = 256;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
 
-    public ut04f1_Holamundo() {
+    public u4a2Montruo_Fragment() {
         // Required empty public constructor
     }
 
@@ -39,11 +39,11 @@ public class ut04f1_Holamundo extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment ut04f1_Holamundo.
+     * @return A new instance of fragment u4a2Montruo_Fragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static ut04f1_Holamundo newInstance(String param1, String param2) {
-        ut04f1_Holamundo fragment = new ut04f1_Holamundo();
+    public static u4a2Montruo_Fragment newInstance(String param1, String param2) {
+        u4a2Montruo_Fragment fragment = new u4a2Montruo_Fragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,22 +59,22 @@ public class ut04f1_Holamundo extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
     }
-    TextView tvHola;
+
+    TextView tvMonstruo;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View layout = inflater.inflate(R.layout.ut04f1__holamundo, container, false);
+        View layout = inflater.inflate(R.layout.u4a2_montruo_, container, false);
 
-        tvHola = layout.findViewById(R.id.u4a1tvHola);
+        tvMonstruo = layout.findViewById(R.id.u4a2MonstFrag);
 
-        tvHola.setOnClickListener((v) -> {
-            tvHola.setBackgroundColor(Color.rgb(
-                    (int) (Math.random()*COLOR_RANGE),
-                    (int) (Math.random()*COLOR_RANGE),
-                    (int) (Math.random()*COLOR_RANGE)));
-        });
-
-        return  layout;
+        tvMonstruo.setText("");
+        tvMonstruo.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+        return layout;
     }
+    public void setMonstruo(Monstruo mns){
+        tvMonstruo.setText(mns.toString());
+    }
+
 }

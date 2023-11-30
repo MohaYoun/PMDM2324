@@ -35,7 +35,34 @@
         android:theme="@style/Theme.PMDM2324"
         tools:targetApi="31">
         <activity
-            android:name=".ut04.u4a1Holamundo"
+            android:name=".ut04.a2MonstruoFrag.u4aFragMonstruo"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ut04.a1Contador.u4a1ElContador"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ut04.fragments1.u4a1Frag4"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ut04.pruebaFragments.u4a1Holamundo"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -171,8 +198,8 @@
         </activity>
         <activity
             android:name=".ut02.u2aPidraPapelTijera"
-            android:exported="true">
-
+            android:exported="true"
+            android:screenOrientation="portrait">
             <!-- android:configChanges="orientation|screenSize" -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

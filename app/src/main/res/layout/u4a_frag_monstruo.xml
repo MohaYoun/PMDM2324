@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#32F44336"
+    tools:context=".ut04.a2MonstruoFrag.u4aFragMonstruo">
+
+
+    <TextView
+        android:id="@+id/u4a2tvNom"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:text="Nombre:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/u4a2etNombre"
+        app:layout_constraintEnd_toStartOf="@+id/u4a2etNombre"
+        app:layout_constraintTop_toTopOf="@+id/u4a2etNombre"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <TextView
+        android:id="@+id/u4a2tvColor"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:text="Color:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/u4a2etColor"
+        app:layout_constraintEnd_toStartOf="@+id/u4a2etColor"
+        app:layout_constraintTop_toTopOf="@+id/u4a2etColor"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/u4a2etColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u4a2etNumMmbrs"
+        app:layout_constraintVertical_bias="0.117" />
+
+    <Spinner
+        android:id="@+id/u4a2spEleccion"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u4a2etColor"
+        app:layout_constraintVertical_bias="0.072" />
+
+    <EditText
+        android:id="@+id/u4a2etNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <Button
+        android:id="@+id/u4a2btGenerar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GENERAR MONSTRUO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u4a2spEleccion"
+        app:layout_constraintVertical_bias="0.14" />
+
+    <TextView
+        android:id="@+id/u4a2tvMiemb"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:text="Miembros:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/u4a2etNumMmbrs"
+        app:layout_constraintEnd_toStartOf="@+id/u4a2etNumMmbrs"
+        app:layout_constraintTop_toTopOf="@+id/u4a2etNumMmbrs"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/u4a2etNumMmbrs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u4a2etNombre"
+        app:layout_constraintVertical_bias="0.093" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/u4a2fcAI"
+        android:name="com.example.pmdm2324.ut04.a2MonstruoFrag.u4a2Montruo_Fragment"
+        android:layout_width="204dp"
+        android:layout_height="148dp"
+        app:layout_constraintBottom_toTopOf="@+id/u4a2fcDI"
+        app:layout_constraintEnd_toStartOf="@+id/u4a2fcAD"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u4a2btGenerar" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/u4a2fcDI"
+        android:name="com.example.pmdm2324.ut04.a2MonstruoFrag.u4a2Montruo_Fragment"
+        android:layout_width="204dp"
+        android:layout_height="148dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/u4a2fcDD"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u4a2fcAI" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/u4a2fcAD"
+        android:name="com.example.pmdm2324.ut04.a2MonstruoFrag.u4a2Montruo_Fragment"
+        android:layout_width="204dp"
+        android:layout_height="148dp"
+        app:layout_constraintBottom_toTopOf="@+id/u4a2fcDD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/u4a2fcAI"
+        app:layout_constraintTop_toBottomOf="@+id/u4a2btGenerar" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/u4a2fcDD"
+        android:name="com.example.pmdm2324.ut04.a2MonstruoFrag.u4a2Montruo_Fragment"
+        android:layout_width="204dp"
+        android:layout_height="148dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/u4a2fcDI"
+        app:layout_constraintTop_toBottomOf="@+id/u4a2fcAD" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

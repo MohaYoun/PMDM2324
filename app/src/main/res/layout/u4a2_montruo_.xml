@@ -3,11 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ut04.pruebaFragments.ut04f1_Holamundo">
+    tools:context=".ut04.a2MonstruoFrag.u4a2Montruo_Fragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:id="@+id/u4a1tvHola"
+        android:id="@+id/u4a2MonstFrag"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="@string/hello_blank_fragment" />

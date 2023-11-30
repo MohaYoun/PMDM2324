@@ -164,7 +164,7 @@ public class u2aPidraPapelTijera extends AppCompatActivity {
             }
         }
     }
-    @Override
+    /*@Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putInt("puntosPersona", puntosPersona);
@@ -202,6 +202,6 @@ public class u2aPidraPapelTijera extends AppCompatActivity {
             imgMaq.setVisibility(View.VISIBLE);
             tvResultado.setText("");
         }
-    }
+    }*/
 
 }

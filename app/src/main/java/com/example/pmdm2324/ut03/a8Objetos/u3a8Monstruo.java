@@ -6,8 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.SeekBar;
-import android.widget.TextView;
 
 import com.example.pmdm2324.R;
 
@@ -21,10 +19,10 @@ public class u3a8Monstruo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.u3a8_monstruo);
 
-        btGenerar = findViewById(R.id.u3a8btGenerar);
-        etNum = findViewById(R.id.u3a8etNumMmbrs);
-        etNombre = findViewById(R.id.u3a8etNombre);
-        etColor = findViewById(R.id.u3a8etColor);
+        btGenerar = findViewById(R.id.u4a2btGenerar);
+        etNum = findViewById(R.id.u4a2etNumMmbrs);
+        etNombre = findViewById(R.id.u4a2etNombre);
+        etColor = findViewById(R.id.u4a2etColor);
 
         btGenerar.setOnClickListener((v) -> {
             String nombre = etNombre.getText().toString();

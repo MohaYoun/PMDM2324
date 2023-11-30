@@ -13,9 +13,9 @@ public class Monstruo implements Serializable {
     int piernasIzquierdas;
     int piernasDerechas;
 
-    public Monstruo(String nombre, int extremidades, String color) {
+    public Monstruo(String nombre, int extremidad, String color) {
         this.nombre = nombre;
-        this.extremidades = extremidades;
+        this.extremidades = extremidad;
         this.color = color;
         Random random = new Random();
         brazosIzquierdos = random.nextInt(extremidades + 1);

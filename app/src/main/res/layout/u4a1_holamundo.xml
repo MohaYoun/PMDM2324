@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ut04.u4a1Holamundo">
+    tools:context=".ut04.pruebaFragments.u4a1Holamundo">
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView"
-        android:name="com.example.pmdm2324.ut04.ut04f1_Holamundo"
+        android:name="com.example.pmdm2324.ut04.pruebaFragments.ut04f1_Holamundo"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
