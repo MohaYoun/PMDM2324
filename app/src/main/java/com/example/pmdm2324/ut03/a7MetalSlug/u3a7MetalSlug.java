@@ -16,7 +16,7 @@ import android.widget.TextView;
 import com.example.pmdm2324.R;
 
 public class u3a7MetalSlug extends AppCompatActivity {
-    public static final String NOMBRE_PERSONAJE = "nombrepersonaje";
+    public static final String NOMB_PERSONAJE = "nombrepersonaje";
     ImageView imgPersonaje1, imgArma1, imgPersonaje2, imgArma2;
     Button btPersonaje1, btArma1, btPersonaje2, btArma2;
     TextView tvPer1, tvPer2, tvArm1, tvArm2;
@@ -86,12 +86,12 @@ public class u3a7MetalSlug extends AppCompatActivity {
         // que ha elegido el jugador numero2
         btPersonaje1.setOnClickListener(view ->{
             Intent i = new Intent(this, u3a7Personajes.class);
-            i.putExtra(NOMBRE_PERSONAJE, nombPersonaje2);
+            i.putExtra(NOMB_PERSONAJE, nombPersonaje2);
             lanzP1.launch(i);
         });
         btPersonaje2.setOnClickListener(view ->{
             Intent i = new Intent(this, u3a7Personajes.class);
-            i.putExtra(NOMBRE_PERSONAJE, nombPersonaje1);
+            i.putExtra(NOMB_PERSONAJE, nombPersonaje1);
             lanzP2.launch(i);
         });
 

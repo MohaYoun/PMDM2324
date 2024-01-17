@@ -16,6 +16,7 @@ import com.example.pmdm2324.R;
 
 public class u2a2 extends AppCompatActivity {
 
+    private static final int RANGO_MAX_COLOR = 255;
     TextView tvSalida;
     EditText etEntrada;
     Switch swConst;
@@ -35,15 +36,17 @@ public class u2a2 extends AppCompatActivity {
         skG = findViewById(R.id.u2a2sbG);
         skB = findViewById(R.id.u2a2sbB);
         btGenera = findViewById(R.id.u2a2btGenerar);
+        skR.setMax(RANGO_MAX_COLOR);
+        skG.setMax(RANGO_MAX_COLOR);
+        skB.setMax(RANGO_MAX_COLOR);
 
 
 
         skR.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                //actColorFondo();
                 skR.getProgress();
-
+                //actColorFondo();// Para que me lo muestre en tiempo real la funcion esta abajo
             }
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
@@ -55,8 +58,8 @@ public class u2a2 extends AppCompatActivity {
         skB.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                //actColorFondo();
                 skB.getProgress();
+                //actColorFondo();
             }
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {

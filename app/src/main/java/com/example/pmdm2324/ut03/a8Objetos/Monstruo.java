@@ -30,8 +30,6 @@ public class Monstruo implements Serializable {
         return color;
     }
 
-
-
     @Override
     public String toString() {
         StringBuilder monstruo = new StringBuilder();

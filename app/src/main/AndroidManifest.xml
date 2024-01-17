@@ -2,7 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <permission android:name="android.permission.QUERY_ALL_PACKAGES"
+        tools:ignore="ReservedSystemPermission" />
+
 
     <queries>
         <intent>
@@ -24,6 +29,11 @@
         </intent>
     </queries>
 
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -34,6 +44,65 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PMDM2324"
         tools:targetApi="31">
+        <activity
+            android:name=".ut06.listasJorge.ut06Lista"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ut05.pruebaPermiso.u5aPruebaPermisos"
+            android:exported="true"
+            android:label="@string/title_activity_u5a_prueba_permisos"
+            android:theme="@style/Theme.PMDM2324">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".examen1.ex2.examen2ContadorPasajeros"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".examen1.ex1.examen1Dev"
+            android:exported="false" />
+        <activity
+            android:name=".examen1.ex1.examenVentaTicket"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ut04.a3PinPon.u4a3PinPon"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ut04.fragmentsComplejo.u4aFragComplej"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".ut04.a2MonstruoFrag.u4aFragMonstruo"
             android:exported="true">
@@ -198,9 +267,13 @@
         </activity>
         <activity
             android:name=".ut02.u2aPidraPapelTijera"
-            android:exported="true"
-            android:screenOrientation="portrait">
-            <!-- android:configChanges="orientation|screenSize" -->
+            android:configChanges="orientation|screenSize"
+            android:exported="true">
+
+            <!--
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

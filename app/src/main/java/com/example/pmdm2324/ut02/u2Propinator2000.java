@@ -49,11 +49,11 @@ public class u2Propinator2000 extends AppCompatActivity {
 
         manejador = (View elPulsado) -> { // Manejador Lambda
             Button btnelPulsado = (Button) elPulsado;
-            /*
-            pulsado = btnelPulsado.getText().toString();
-            pulsadoConcatenado = tvSalida.getText().toString() + pulsado;
-            tvSalida.setText(pulsadoConcatenado);*/
             tvSalida.append(btnelPulsado.getText().toString());
+//            pulsado = btnelPulsado.getText().toString();
+//            pulsadoConcatenado = tvSalida.getText().toString() + pulsado;
+//            tvSalida.setText(pulsadoConcatenado);
+
         };
         /* Normal, no landa;
         manejador = new View.OnClickListener() {

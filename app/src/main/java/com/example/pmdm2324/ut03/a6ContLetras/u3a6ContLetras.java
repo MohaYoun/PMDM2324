@@ -33,7 +33,7 @@ public class u3a6ContLetras extends AppCompatActivity {
 
         btLanza.setOnClickListener(view ->{
             Intent i = new Intent(this, u3a6DevContLetras.class);
-            i.putExtra(u3a6ContLetras.FRASE, etEntrada.getText().toString());
+            i.putExtra(FRASE, etEntrada.getText().toString());
             lanzador.launch(i);
         });
 

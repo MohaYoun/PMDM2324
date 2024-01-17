@@ -19,6 +19,9 @@ import java.util.Random;
 
 public class u2aPidraPapelTijera extends AppCompatActivity {
 
+    private static final String OPC_PIEDRA = "piedra";
+    private static final String OPC_PAPEL = "papel";
+    private static final String OPC_TIJERA = "tijera";
     TextView tvPuntPers, tvPuntMaq, tvResultado;
     ImageView imgPiedra, imgPapel, imgTijera, imgMaq;
     View.OnClickListener manejador;
@@ -41,9 +44,9 @@ public class u2aPidraPapelTijera extends AppCompatActivity {
         tvPuntPers = findViewById(R.id.u2aPPTtvPuntPersona);
         tvResultado = findViewById(R.id.u2aPPTtvResultado);
 
-        imgPapel.setOnClickListener(v -> jugar("papel"));
-        imgPiedra.setOnClickListener(v -> jugar("piedra"));
-        imgTijera.setOnClickListener(v -> jugar("tijera"));
+        imgPapel.setOnClickListener(v -> jugar(OPC_PAPEL));
+        imgPiedra.setOnClickListener(v -> jugar(OPC_PIEDRA));
+        imgTijera.setOnClickListener(v -> jugar(OPC_TIJERA));
 
         vibrar = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
 
@@ -52,20 +55,20 @@ public class u2aPidraPapelTijera extends AppCompatActivity {
     }
 
     private void jugar(String eleccionPersona) {
-        String[] opciones = {"piedra", "papel", "tijera"};
+        String[] opciones = {OPC_PIEDRA, OPC_PAPEL, OPC_TIJERA};
         Random random = new Random();
         int index = random.nextInt(opciones.length);
         String eleccionMaquina = opciones[index];
 
         // Lógica de juego
-        if (eleccionPersona.equals("piedra") && eleccionMaquina.equals("tijera") ||
-                eleccionPersona.equals("papel") && eleccionMaquina.equals("piedra") ||
-                eleccionPersona.equals("tijera") && eleccionMaquina.equals("papel")) {
+        if (eleccionPersona.equals(OPC_PIEDRA) && eleccionMaquina.equals(OPC_TIJERA) ||
+                eleccionPersona.equals(OPC_PAPEL) && eleccionMaquina.equals(OPC_PIEDRA) ||
+                eleccionPersona.equals(OPC_TIJERA) && eleccionMaquina.equals(OPC_PAPEL)) {
             puntosPersona++;
             vibracionGanar();
-        } else if (eleccionMaquina.equals("piedra") && eleccionPersona.equals("tijera") ||
-                eleccionMaquina.equals("papel") && eleccionPersona.equals("piedra") ||
-                eleccionMaquina.equals("tijera") && eleccionPersona.equals("papel")) {
+        } else if (eleccionMaquina.equals(OPC_PIEDRA) && eleccionPersona.equals(OPC_TIJERA) ||
+                eleccionMaquina.equals(OPC_PAPEL) && eleccionPersona.equals(OPC_PIEDRA) ||
+                eleccionMaquina.equals(OPC_TIJERA) && eleccionPersona.equals(OPC_PAPEL)) {
             puntosMaquina++;
             vibracionPerder();
         }
@@ -73,11 +76,11 @@ public class u2aPidraPapelTijera extends AppCompatActivity {
         // Actualizar las vistas
         tvPuntPers.setText(String.valueOf(puntosPersona));
         tvPuntMaq.setText(String.valueOf(puntosMaquina));
-        if (eleccionMaquina.equals("papel")) {
+        if (eleccionMaquina.equals(OPC_PAPEL)) {
             imgMaq.setImageResource(R.drawable.papel);
-        } else if (eleccionMaquina.equals("piedra")) {
+        } else if (eleccionMaquina.equals(OPC_PIEDRA)) {
             imgMaq.setImageResource(R.drawable.piedra);
-        } else if (eleccionMaquina.equals("tijera")){
+        } else if (eleccionMaquina.equals(OPC_TIJERA)){
             imgMaq.setImageResource(R.drawable.tijera);
         }else{}
 

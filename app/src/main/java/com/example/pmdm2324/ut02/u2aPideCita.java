@@ -21,6 +21,7 @@ import android.widget.TimePicker;
 import com.example.pmdm2324.R;
 
 public class u2aPideCita extends AppCompatActivity {
+    private static final String MSG_CONFIRMACION = "¡Cita confirmada con EXITO!";
     TextView tvFecha, tvHora, tvError, tvMostrarNombre, tvMostrarDNI, tvMensajeFinal, tvHoraFin, tvFechaFin, tvFyHFin;
     EditText etDNI, etNombre;
     Button btValidar, btFecha, btHora;
@@ -56,6 +57,7 @@ public class u2aPideCita extends AppCompatActivity {
         tvHoraFin.setVisibility(View.INVISIBLE);
         imgChek.setVisibility(View.INVISIBLE);
 
+        // Para elegir fecha
         btFecha.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -90,6 +92,7 @@ public class u2aPideCita extends AppCompatActivity {
                 datePickerDialog.show();
             }
         });
+        // Para elegir hora
         btHora.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -119,10 +122,11 @@ public class u2aPideCita extends AppCompatActivity {
             }
         });
 
+
         btValidar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                tvMensajeFinal.setText("¡Cita confirmada con EXITO!");
+                tvMensajeFinal.setText(MSG_CONFIRMACION);
                 String dniVal = etDNI.getText().toString();
                 validarDNI(dniVal);
                 if(validarDNI(dniVal)==false||etNombre.getText().toString().isEmpty()||etDNI.getText().toString().isEmpty()||tvHora.getText().toString().isEmpty()||tvFecha.getText().toString().isEmpty()){
@@ -163,6 +167,5 @@ public class u2aPideCita extends AppCompatActivity {
         }else {
             return  false;
         }
-
     }
 }

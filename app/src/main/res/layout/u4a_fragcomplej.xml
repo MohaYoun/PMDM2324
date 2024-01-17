@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ut04.fragmentsComplejo.u4aFragComplej">
+
+    <ImageView
+        android:id="@+id/u4aFragComplejIVestrella"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/star_big_on" />
+
+    <ImageView
+        android:id="@+id/u4aFCivStar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/u4aFragComplejFC1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u4aFragComplejIVestrella"
+        app:srcCompat="@android:drawable/star_big_on" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/u4aFragComplejFC1"
+        android:name="com.example.pmdm2324.ut04.fragmentsComplejo.u4aFC_holamundo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u4aFragComplejIVestrella"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/u4aFCtvcolor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/u4aFragComplejIVestrella"
+        app:layout_constraintTop_toTopOf="@+id/u4aFragComplejIVestrella" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

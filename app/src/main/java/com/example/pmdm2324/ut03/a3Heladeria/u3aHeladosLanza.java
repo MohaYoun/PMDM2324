@@ -23,10 +23,14 @@ public class u3aHeladosLanza extends AppCompatActivity {
         tvChocoCucu = findViewById(R.id.u3aHeladosLanzaTvCucuChoco);
 
         Bundle info = getIntent().getExtras();
+        String bolasChoco = getIntent().getStringExtra(u3aHelados.BOLAS_CHOCOLATE);
         if (info != null) {
-            int fresa = info.getInt("fresa");
-            int vainilla = info.getInt("vainilla");
-            int choco = info.getInt("choco");
+//            int fresa = info.getInt("fresa");
+//            int vainilla = info.getInt("vainilla");
+//            int choco = info.getInt("choco");
+            int fresa = Integer.parseInt(info.getString("fresa"));
+            int vainilla = Integer.parseInt(info.getString("vainilla"));
+            int choco = Integer.parseInt(bolasChoco);
             String tipoHelado = info.getString("tipoHelado");
 
             tvBolasFresa.setText(generarLetras('O', fresa));

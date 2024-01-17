@@ -31,7 +31,7 @@ public class u3aCalculadoraLanza extends AppCompatActivity {
         btSalida = findViewById(R.id.u3aCalculadoraLanzabtLanza);
 
         btSalida.setOnClickListener(view ->{
-            if((!etnum1.getText().toString().isEmpty()&&!etnum2.getText().toString().isEmpty())&&
+            if((!etnum1.getText().toString().isEmpty() && !etnum2.getText().toString().isEmpty()) &&
                     (rbDivision.isChecked()||rbMult.isChecked()||rbResta.isChecked()||rbSuma.isChecked())) {
                 int num1 = Integer.parseInt(etnum1.getText().toString());
                 int num2 = Integer.parseInt(etnum2.getText().toString());

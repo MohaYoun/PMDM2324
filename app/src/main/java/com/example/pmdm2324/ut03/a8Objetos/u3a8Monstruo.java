@@ -35,7 +35,5 @@ public class u3a8Monstruo extends AppCompatActivity {
             i.putExtra(Monstruo.CLAVE_MONSTRUO, miMonstruo);
             startActivity(i);
         });
-
-
     }
 }

@@ -38,6 +38,7 @@ public class u3a6DevContLetras extends AppCompatActivity {
 
         Bundle info = getIntent().getExtras();
         String texto = info.getString(u3a6ContLetras.FRASE);
+//        String texto = getIntent().getStringExtra(u3a6ContLetras.FRASE);
 
         for (int i = 0; i < texto.length(); i++) {
             char c = texto.charAt(i);
@@ -61,11 +62,11 @@ public class u3a6DevContLetras extends AppCompatActivity {
         });*/
         // Mostrar todas las letras y sus recuentos en el TextView
         StringBuilder sb = new StringBuilder();
-        /*Utilizando un bucle for-each tradicional:
+        /* Utilizando un bucle for-each tradicional:
         for (Map.Entry<Character, Integer> entry : lista) {
             sb.append("Letra "+ entry.getKey()).append(": ").append(entry.getValue()).append("\n");
         }*/
-        //utilizando el método forEach de la interfaz Map:
+        // Utilizando el método forEach de la interfaz Map:
         lista.forEach(entry -> sb.append("Letra ").append(entry.getKey()).append(": ").append(entry.getValue()).append("\n"));
 
         tvLista.setText(sb.toString());

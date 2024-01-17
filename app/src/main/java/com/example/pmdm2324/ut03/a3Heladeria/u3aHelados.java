@@ -14,6 +14,7 @@ import android.widget.Spinner;
 import com.example.pmdm2324.R;
 
 public class u3aHelados extends AppCompatActivity {
+    public static final String BOLAS_CHOCOLATE = "choco";
     EditText numVainilla, numFresa, numChoco;
     Spinner eleccionSpinner;
     Button btGenerar;
@@ -44,18 +45,23 @@ public class u3aHelados extends AppCompatActivity {
         btGenerar.setOnClickListener((View v) ->{
             if(numFresa.getText().toString().isEmpty()&&numChoco.getText().toString().isEmpty()&&numVainilla.getText().toString().isEmpty()){
                 AlertDialog.Builder alerta = new AlertDialog.Builder(this);
-                alerta.setMessage("Tienes que elegir un por lo menos un sabor.")
+                alerta.setMessage("Tienes que elegir por lo menos un sabor.")
                         .setCancelable(true);
                 AlertDialog alert = alerta.create();
                 alert.show();
             }else {
                 Intent i = new Intent(this, u3aHeladosLanza.class);
-                Bundle bundle = new Bundle();
-                bundle.putInt("fresa", Integer.parseInt(numFresa.getText().toString()));
-                bundle.putInt("vainilla", Integer.parseInt(numVainilla.getText().toString()));
-                bundle.putInt("choco", Integer.parseInt(numChoco.getText().toString()));
-                bundle.putString("tipoHelado", eleccionSpinner.getSelectedItem().toString());
-                i.putExtras(bundle);
+//                Bundle bundle = new Bundle();
+//                bundle.putInt("fresa", Integer.parseInt(numFresa.getText().toString()));
+//                bundle.putInt("vainilla", Integer.parseInt(numVainilla.getText().toString()));
+//                bundle.putInt("choco", Integer.parseInt(numChoco.getText().toString()));
+//                bundle.putString("tipoHelado", eleccionSpinner.getSelectedItem().toString());
+//                i.putExtras(bundle);
+                i.putExtra("fresa", numFresa.getText().toString());
+                i.putExtra("vainilla", numVainilla.getText().toString());
+                i.putExtra(BOLAS_CHOCOLATE, numChoco.getText().toString());
+                i.putExtra("tipoHelado", eleccionSpinner.getSelectedItem().toString());
+
                 startActivity(i);
             }
         });

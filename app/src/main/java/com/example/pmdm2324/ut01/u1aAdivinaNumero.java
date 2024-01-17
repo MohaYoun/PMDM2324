@@ -13,14 +13,13 @@ import com.example.pmdm2324.R;
 public class u1aAdivinaNumero extends AppCompatActivity {
     final int MAX_VIDAS=6;
     final int MIN_VIDAS=0;
-
-    int num_random = (int)(Math.random()*101);
-    int vidas = MAX_VIDAS;
     boolean fin = false;
     Button btReset, btInsert;
     TextView tvLives,tvStatus;
     EditText etEntrada;
-    private String vidas_restantes = "Numero de vidas restantes: ";
+    int num_random = (int) (Math.random() * 101);
+    int vidas = MAX_VIDAS;
+    private String VIDAS_RESTANTES = "Numero de vidas restantes: ";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +31,9 @@ public class u1aAdivinaNumero extends AppCompatActivity {
          tvStatus = findViewById(R.id.u1aAdivinatvPista);
          etEntrada = findViewById(R.id.u1aAdivinaetInserta);
 
-         tvLives.setText(vidas_restantes+vidas);  // Aqui era necesario hacer un getString
+
+
+         tvLives.setText(VIDAS_RESTANTES + vidas);  // Aqui era necesario hacer un getString
 
          btInsert.setOnClickListener(new View.OnClickListener() {
              @Override
@@ -40,7 +41,7 @@ public class u1aAdivinaNumero extends AppCompatActivity {
                  if(vidas > 0){
                      vidas -= 1;
                  }
-                 tvLives.setText(vidas_restantes+vidas);
+                 tvLives.setText(VIDAS_RESTANTES + vidas);
                  if(vidas <= MIN_VIDAS ){
                      tvStatus.setText("Se te acabron las oportunidades.");
                  } else if (num_random > Integer.parseInt(etEntrada.getText().toString())&& !fin) {
@@ -56,10 +57,10 @@ public class u1aAdivinaNumero extends AppCompatActivity {
          btReset.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View view) {
-                 num_random = (int)(Math.random()*101);
+                 num_random = (int) (Math.random() * 101);
                  vidas = MAX_VIDAS;
                  tvStatus.setText("");
-                 tvLives.setText(vidas_restantes+vidas);
+                 tvLives.setText(VIDAS_RESTANTES + vidas);
                  etEntrada.setText("");
                  fin=false;
              }

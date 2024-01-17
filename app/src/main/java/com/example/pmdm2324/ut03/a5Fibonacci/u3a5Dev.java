@@ -33,11 +33,12 @@ public class u3a5Dev extends AppCompatActivity {
 
 
         btAceptar.setOnClickListener(view ->{
-            Intent dato = new Intent();
             String numero = tvNumFinal.getText().toString();
-
-            dato.putExtra(u3a5Dev.CLAVE_NUMERO, numero);
-            setResult(Activity.RESULT_OK, dato);
+            Intent i = new Intent();
+            i.putExtra(u3a5Dev.CLAVE_NUMERO, numero);
+//            Intent i = new Intent(this, u3a5Fibonacci0.class);
+//            i.putExtra(CLAVE_NUMERO, numero);
+            setResult(Activity.RESULT_OK, i);
             finish();
         });
     }

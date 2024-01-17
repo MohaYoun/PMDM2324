@@ -16,7 +16,6 @@ public class u3a7Personajes extends AppCompatActivity {
     Button btLimpPers, btCancPers;
     public static final String IMG_PERSONAJE = "IMGPERSONAJE";
     public static final String NOMBRE_PERSONAJE = "NOMBREPERSONAJE";
-    public static final String IMG_ARMA = "imgarma";
 
 
     @Override
@@ -31,7 +30,7 @@ public class u3a7Personajes extends AppCompatActivity {
         btCancPers = findViewById(R.id.u3a7btCancSelecPers);
         btLimpPers = findViewById(R.id.u3a7btLimpSelecPers);
 
-        String nombrePersonaje = getIntent().getStringExtra(u3a7MetalSlug.NOMBRE_PERSONAJE);
+        String nombrePersonaje = getIntent().getStringExtra(u3a7MetalSlug.NOMB_PERSONAJE);
         if(nombrePersonaje.equals("RJ")){
             imgRJ.setEnabled(false);
             imgRJ.setBackgroundColor(Color.GRAY);
