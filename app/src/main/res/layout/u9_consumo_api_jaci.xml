@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ut09.practicaAPIPeliActor.u9ConsumoApiJaci">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclePeliculas"
+        android:layout_width="404dp"
+        android:layout_height="587dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/introducirID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/botonGenRecycle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/introducirID"
+        app:layout_constraintStart_toStartOf="@+id/introducirID"
+        app:layout_constraintTop_toBottomOf="@+id/introducirID" />
+
+    <EditText
+        android:id="@+id/introducirID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/botonGenRecycle"
+        app:layout_constraintEnd_toEndOf="@+id/recyclePeliculas"
+        app:layout_constraintStart_toStartOf="@+id/recyclePeliculas"
+        app:layout_constraintTop_toBottomOf="@+id/recyclePeliculas" />
+
+    <ProgressBar
+        android:id="@+id/PeliculaRuleta"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.418" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
